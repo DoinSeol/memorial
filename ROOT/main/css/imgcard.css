@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+
+
+.deceased_list {}
+.contents_sub_title.title_add {}
+
+/* 05_02_01 추모의방 신청*/
+
+
+.title_add_bt {display: flex; justify-content: center; align-items: flex-end;}
+.title_add_bt .add_bt {margin-bottom: 1.5rem;}
+
+
+.list_control .add_list_control_box a{width: 20px; height: 20px; border-radius: 38px; position: relative; display: inline-block; font-size: 0.875rem; background-image: url(../images/icon/circle-xmark-solid_b.svg); background-repeat: no-repeat; background-position: center; background-size:auto; }
+
+.list_control th {font-size: 0.875rem;}
+.list_control td {display: flex; gap: 0.875rem; justify-content: flex-start; align-items: center;}
+.list_control input{ width: 100%}
+
+/* 05_03_01 이미지카드*/
+.memorial_container {padding: 3rem; display: flex; gap: 2rem; justify-content: center; align-items: stretch; border-radius: 15px; margin-bottom: 2rem; background-image: url(../images/sub/letter_back_1.png); background-size: cover;}
+
+.memorial_container .memorial_img_box, .memorial_container .memorial_txt_box {width: 50%; display: flex; justify-content: center; align-items: center;  }
+
+.memorial_container .memorial_img_box .memorial_img_frame_box {height: 380px; width: 100%; max-width: 400px; padding: 0rem 4rem 0rem;   }
+.memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame {position: relative; z-index:2; background-olor: rgba(119, 119, 119, 0.5);  width: 100%; height: 100%; }
+.memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame::before {z-index:-1; content:""; display: block; width: calc(100% + 12rem); height: 90%; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); background-image: url(../images/sub/frame_flower_03.png), url(../images/sub/frame_flower_04.png); background-position: left bottom, right bottom; background-size: auto 80%; background-repeat: no-repeat;}
+/* .memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame::before {z-index:3; content:""; display: block; width: calc(100% + 12rem); height: 80%; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); background-image: url(../images/sub/frame_flower_01.png), url(../images/sub/frame_flower_02.png); background-position: left bottom, right bottom; background-size: auto 80%; background-repeat: no-repeat;} */
+/* .memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame::after {z-index:3;content:""; display: block; width: 100%; height: 200px; position: absolute; top: -25px; left: 50%; transform: translate(-50%, 0); background-image: url(../images/sub/frame_r.png); background-position: center; background-size: cover; background-repeat: no-repeat;} */
+.memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame img{width: 100%; height: 100%; object-fit: cover; border: 18px solid #665242;}
+.memorial_container .memorial_img_box .memorial_img_flower {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 600px; height: 100%; background-image: url(../images/sub/frame_flower_03.png), url(../images/sub/frame_flower_04.png); background-position: left bottom, right bottom; background-size: auto 80%; background-repeat: no-repeat;}
+
+
+.memorial_container .memorial_txt_box {flex-direction: column;  gap: 1rem; }
+.memorial_container .memorial_txt_box .memorial_name ,.memorial_container .memorial_txt_box .memorial_txt {text-align: center;}
+.memorial_container .memorial_txt_box .memorial_name {font-size: 3rem; color: #665242;}
+.memorial_container .memorial_txt_box .memorial_txt {font-size: 1.5rem; width: 100%; color: #836953; border-top: 1px solid #836953; border-bottom: 1px solid #836953; padding: 0.5rem; }
+.memorial_container .memorial_txt_box .memorial_info {border-collapse: separate; border-spacing: 0 0.5rem;}
+.memorial_container .memorial_txt_box .memorial_info th { background-color: #836953; color: #fff;  }
+.memorial_container .memorial_txt_box .memorial_info td { background-color: #fff; border: 0;}
+
+
+/* 05_03_01, 05_04 이미지카드 (편지리스트) */
+.img_card_list_box {width: 100%; display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;}
+.img_card_list_box .img_card {position: relative; border-radius: 15px; display: flex; justify-content: flex-start; align-items: flex-start; width: calc((100% - 2rem) / 3); border: 1px solid #E6E6E6;}
+.img_card_list_box .img_card.lock::after {content:""; display: block; position: absolute; top: 1.5rem; right: 1rem; width: 0.875rem; height: 0.875rem; background-image: url(../images/icon/lock-solid-full.svg);background-repeat: no-repeat; background-position: cover; }
+.img_card_list_box .img_card:hover .card_txt .card_to {text-decoration: underline;}
+.img_card_list_box .img_card .card_img {width: 150px; height: 150px; flex-shrink:0; border-radius: 15px 0 0 15px; background-image: url(../images/sub/sub_05_04_01.png); background-repeat: no-repeat; background-size: cover; background-position: left bottom;}
+.img_card_list_box .img_card .card_txt {width: calc(100% - 150px); color: #666; font-size: 0.875rem; padding: 1.5rem 1rem; align-self: stretch; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start;}
+/* .img_card_list_box .img_card .card_txt .card_no {color: #acacac; } */
+.img_card_list_box .img_card .card_txt .card_to {width: 100%; font-size: 1.125rem; font-family: 'font_basic_B'; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.img_card_list_box .img_card .card_txt .card_info {}
+.img_card_list_box .img_card .card_txt .card_from {}
+.img_card_list_box .img_card .card_txt .card_date {}
+
+
+/* 05_03 고인리스트 */
+/* .img_card_list_box.deceased_list .img_card .card_img {background-image: url(../images/sub/frame_n.png); background-size: 132px; background-position: center bottom; border-right: 1px solid #ddd;} */
+
+
+
+
+/* 50_04_01 상세보기 (편지) */
+.letter_view {width: 100%; min-height: 700px; border-radius: 15px; display: flex; justify-content: center; align-items: flex-start; 
+  background-image: url(../images/sub/letter_fly_01.png), url(../images/sub/letter_fly_02.png), url(../images/sub/letter_flowe_01_01.png), url(../images/sub/letter_flowe_02_01.png), url(../images/sub/letter_back.png); background-size: 30% auto, 30% auto, 35% auto, 35% auto, cover; background-position: top left, top right, bottom left, bottom right, center; background-repeat: no-repeat;}
+/* .letter_view .letter_img {width: 35%;} */
+.letter_view .letter_content {width: 65%; padding: 5rem 3rem; text-align: center; display: flex; flex-direction: column; gap: 2rem; justify-content: center; align-items: center;}
+.letter_view .letter_content .letter_to {position: relative; font-size: 1.5rem; font-family: 'font_basic_B';/*padding-left: 50px;*/}
+
+.letter_view_box {gap: 1rem;}
+
+
+@media all and (max-width: 1200px){
+  .letter_view {background-size: 40% auto, 40% auto, 35% auto, 35% auto, cover;}
+  .letter_view .letter_content {width: 70%;}
+}
+
+
+@media all and (max-width: 1100px){
+.img_card_list_box .img_card {width: calc((100% - 1rem) / 2);}
+
+}
+
+@media all and (max-width: 1000px){
+
+  .memorial_container {padding: 2rem; }
+  /* .memorial_container .memorial_img_box .memorial_img_frame_box {padding: 1rem; height: 350px;} */
+  .memorial_container .memorial_img_box .memorial_img_frame_box {height: 260px; width: 100%; max-width: 300px; }
+  .memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame::before {width: calc(100% + 10rem); height: 100%;}
+    
+  .letter_view .letter_content {width: 75%;}
+}
+
+@media all and (max-width: 800px){
+  .memorial_container .memorial_txt_box .memorial_info {font-size: 14px;}
+
+
+}
+
+@media all and (max-width: 767.99px){
+  .img_card_list_box .img_card .card_img {width: 120px; height: 120px;}
+  .img_card_list_box .img_card .card_txt {width: calc(100% - 120px);}
+
+}
+
+
+@media all and (max-width: 700px){
+
+.memorial_container {flex-direction: column;}
+.memorial_container .memorial_img_box, .memorial_container .memorial_txt_box {width: 100%;}
+  .memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame img {border: 14px solid #665242;}
+
+
+}
+
+
+@media all and (max-width: 600px){
+
+  .letter_view {background-size: 45% auto, 45% auto, 35% auto, 35% auto, cover;}
+  .letter_view .letter_content {width: 100%; padding: 4rem 1rem 5rem 1rem;}
+  .img_card_list_box .img_card .card_img {width: 100px; height: 120px;}
+
+  .memorial_container .memorial_txt_box .memorial_name {font-size: 2.5rem;}
+
+}
+
+@media all and (max-width: 500px){
+
+  .memorial_container {padding: 1.5rem 1rem; gap: 1rem;}
+  .memorial_container .memorial_img_box .memorial_img_frame_box {height: 220px; width: 100%; max-width: 280px; }
+  .memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame img {border: 12px solid #665242;}
+  .memorial_container .memorial_img_box .memorial_img_frame_box .memorial_img_frame::before {width: calc(100% + 8rem);}
+  .memorial_container .memorial_txt_box .memorial_txt {font-size: 1.2rem;}
+
+
+  .img_card_list_box .img_card {width:100%;}
+
+
+  .letter_view {background-size: 45% auto, 45% auto, 45% auto, 45% auto, cover;}
+  .letter_view .letter_content {width: 100%; padding: 4rem 1rem 5rem 1rem;}
+
+
+
+
+
+}

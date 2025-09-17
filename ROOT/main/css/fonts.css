@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 'font_title';
+  src: url(font/Chosun.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'font_basic_B';
+  src: url(font/PreG-Bold.otf) format('truetype');
+}
+@font-face {
+  font-family: 'font_basic_M';
+  src: url(font/PreG-Medium.otf) format('truetype');
+}
+@font-face {
+  font-family: 'font_basic_R';
+  src: url(font/PreG-Regular.otf) format('truetype');
+}
+
