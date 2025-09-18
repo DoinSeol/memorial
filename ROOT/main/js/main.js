@@ -86,8 +86,8 @@ $(function() {
     slidesPerView: 5,
     spaceBetween: 20,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".notic_swiper_bt.swiper-button-next",
+      prevEl: ".notic_swiper_bt.swiper-button-prev"
     },
     pagination: {
       el: ".notic_pagination_num",

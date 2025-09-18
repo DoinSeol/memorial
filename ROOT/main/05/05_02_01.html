@@ -65,6 +65,7 @@
 
   <script type="text/javascript" src="../js/jquery.cookie.js"></script>
 
+
 </head>
 
 
@@ -365,24 +366,34 @@
                   </tr>
 
                   <tr>
-                    <th scope="row" width="20%" class="left"><label for="deceased_address">봉안위치</label></th>
+                    <th scope="row" class="left"><label for="deceased_address">봉안위치</label></th>
                     <td width=""><input type="text" name="deceased_address" size="25" maxlength="50" value="" id="deceased_address"></td>
                   </tr>
 
                   <tr>
-                    <th scope="row" width="20%" class="left"><label for="deceased_date">안치일</label></th>
+                    <th scope="row"class="left"><label for="deceased_date">안치일</label></th>
                     <td width=""><input type="date" name="deceased_date" size="25" maxlength="50" value="" id="deceased_date"></td>
                   </tr>
 
                   <tr>
-                    <th scope="row" width=""><label for="deceased_fixeddate">기일</label></th>
+                    <th scope="row"><label for="deceased_fixeddate">기일</label></th>
                     <td width=""><input type="date" name="deceased_fixeddate" size="25" maxlength="15" value="" id="deceased_fixeddate"></td>
                   </tr>
 
                   <tr>
-                    <th scope="row" width=""><label for="deceased_img">사진</label></th>
-                    <td width=""><input type="file" name="deceased_img" size="25" maxlength="15" value="" id="deceased_img"></td>
+                    <th scope="row"><label for="ex_filename">사진</label></th>
+                    <td width="">
+                      <div class="file-upload">
+                        <input type="text" class="upload-name" value="파일선택" disabled="disabled">
+                        
+                        <label for="ex_filename" class="btn_square_color">업로드</label> 
+                        <input type="file" id="ex_filename" class="upload-hidden"> 
+                      </div>
+                      <!-- <input type="file" name="deceased_img" size="25" maxlength="15" value="" id="deceased_img"> -->
+                    </td>
                   </tr>
+
+
 
                 </tbody>
               </table>
